@@ -40,3 +40,42 @@
 .read-the-docs {
   color: #888;
 }
+.bot-card-container {
+  display: inline-flex;
+  flex-wrap: wrap; 
+  
+  gap:10px;
+
+}
+
+.bot-card {
+  width: 200px; 
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  padding: 10px; 
+  background-color: gray;
+  
+}
+
+.bot-card img {
+  width: 100%; 
+  height: auto; 
+}
+
+.bot-card div {
+  text-align: center; 
+  color: white;
+}
+
+.enlisted-bots{
+    background-color: greenyellow;
+    height :200px;
+    display:flex;
+    gap: 8px;
+}
+.bot-item img{
+    max-height: 100%;
+    width: auto;
+    background-color: gray;
+}
