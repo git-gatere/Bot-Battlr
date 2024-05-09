@@ -1,11 +1,11 @@
     
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Botcollection from './BotCollection';
-import BotDetails from './BotDetails';
+import Botcollection from './components/BotCollection';
+import BotDetails from './components/BotDetails';
 import { Routes, Route } from 'react-router-dom';
-import BotArmy from './BotArmy';
-import SortBar from './SortBar'; // Import the SortBar component
+import BotArmy from './components/BotArmy';
+import SortBar from './components/SortBar'; // Import the SortBar component
 
 
 function App() {
