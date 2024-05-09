@@ -1,24 +1,65 @@
-import React, { useState } from 'react';
-import BotCollection from './assets/components/botCollection';
-import BotDetails from './assets/components/botSpecs';
-import EnlistedBots from './assets/components/yourBotArmy';
+    
+import React, { useState, useEffect } from 'react';
+import './App.css';
+import Botcollection from './BotCollection';
+import BotDetails from './BotDetails';
 import { Routes, Route } from 'react-router-dom';
+import BotArmy from './BotArmy';
+import SortBar from './SortBar'; // Import the SortBar component
+
 
 function App() {
-  const [enlistedBots, setEnlistedBots] = useState([]); 
+  const [bots, setBots] = useState([]);
+  const [army, setArmy] = useState([]);
+  const [deletion, setDelition] = useState([])
+
+  useEffect(() => {
+    fetch("http://localhost:3000/bots")
+      .then(response => response.json())
+      .then(data => setBots(data))
+      .catch(error => console.error('Error fetching bots:', error));
+  }, []);
+
+  const handleAddToArmy = (bot) => {
+    setArmy(prevArmy => [...prevArmy, bot]);
+  };
+
+  const handleReleaseFromArmy = (bot) => {
+    setArmy(prevArmy => prevArmy.filter(item => item.id !== bot.id));
+    
+  };
+  const deleteBot = (bot) => {
+    fetch(`http://localhost:3000/bots/${bot.id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => { 
+      setArmy(prevBots => prevBots.filter(item => item.id !== bot.id));
+      setBots(prevBots => prevBots.filter(item => item.id !== bot.id))
+    })
+    .then(data =>console.log(data))
+   
+  };
+  function sortBots (property) {
+ 
+    const sortedBots = bots.slice();
+    sortedBots.sort((a, b) => a[property] - b[property]);
+    setBots(sortedBots);
+  };
+
+  
+
   return (
-    <div>
-      <EnlistedBots enlistedBots={enlistedBots} />
+    <div className="App">
+       <SortBar sortBots={sortBots}  />
+      
+      <BotArmy army={army} handleReleaseFromArmy={handleReleaseFromArmy} deleteBot={deleteBot}/>
+      <h1 className='app-head'>Bot Army</h1>
       <Routes>
-        <Route
-          path="/"
-          element={<BotCollection setEnlistedBots={setEnlistedBots} />}
-        />
-        <Route
-          path="/details/:id"
-          element={<BotDetails setEnlistedBots={setEnlistedBots} enlistedBots={enlistedBots} />} 
-        />
-        
+        <Route path='/' element={<Botcollection bots={bots} />} />
+        <Route path='/bots/:id' element={<BotDetails bots={bots} handleAddToArmy={handleAddToArmy} />} />
       </Routes>
     </div>
   );

@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,42 +41,170 @@
 .read-the-docs {
   color: #888;
 }
-.bot-card-container {
-  display: inline-flex;
-  flex-wrap: wrap; 
-  
-  gap:10px;
+
+
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+/* Bot collection styles */
+.bot-collection-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+  margin-bottom: 20px;
+}
+
+/* Bot card styles */
+.bot-card-1 {
+  flex: 0 1 300px;
+  background-color:chartreuse;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 18px; 
+  margin-right: 18px; 
+}
+
+
+.bot-card-1 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Bot details styles */
+.bot-detail-2 {
+  background-color: #141313;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.bot-detail-2 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.bot-detail-2-h2{
+  background-color: #141313;
+}
+/* Sort bar styles */
+.sort-bar-1 {
+  display: flex;
+  justify-content:left;
+  margin-bottom: 20px;
+}
+
+.sort-bar-1 button {
+  background-color:aqua;
+  border: none;
+  color:rgb(255, 0, 242);
+  padding: 10px 20px;
+  text-align:left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 8px 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.sort-bar-1 button:hover {
+  background-color: #a04551;
+}
+.app-head{
+  color: #131314;
+}
+
+
+
+/* Bot army styles */
+.bot-army-5 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.bot-army-5 h1 {
+  text-align:left;
+  margin-bottom: 15px;
+  color:blue;
 
 }
 
-.bot-card {
-  width: 200px; 
-  height: 250px;
-  border: 1px solid #ccc;
-  border-radius: 8px; 
-  padding: 10px; 
-  background-color: gray;
-  
+.bot-army-5 .bot-card-container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:baseline; 
 }
 
-.bot-card img {
-  width: 100%; 
-  height: auto; 
+.bot-army-5 .bot-card-4 {
+  flex: 0 1 300px; 
+  background-color:darkorchid;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px; 
+  margin-right: 20px; 
 }
 
-.bot-card div {
-  text-align: center; 
-  color: white;
+.bot-army-5 .bot-card-4 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
-.enlisted-bots{
-    background-color: greenyellow;
-    height :200px;
-    display:flex;
-    gap: 8px;
+.bot-army-5 .bot-card-4 button {
+  background-color: #ff4136;
+  border: none;
+  color:aqua;
+  padding: 8px 16px;
+  text-align:left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: radius 5px;
+  transition: background-color 0.3s;
+  margin-left: auto;
 }
-.bot-item img{
-    max-height: 100%;
-    width: auto;
-    background-color: gray;
+
+.bot-army-5 .bot-card-4 button:hover {
+  background-color: #d50000;
+}
+
+
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color:#d50000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }
