@@ -1,6 +1,5 @@
 import React from 'react';
 import BotCard from './BotCard';
-import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function Botcollection({ bots }) {

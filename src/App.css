@@ -13,7 +13,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em purple);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -71,7 +71,7 @@ body {
 /* Bot card styles */
 .bot-card-1 {
   flex: 0 1 300px;
-  background-color:chartreuse;
+  background-color:blueviolet;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -112,9 +112,9 @@ body {
 }
 
 .sort-bar-1 button {
-  background-color:aqua;
+  background-color: palevioletred;
   border: none;
-  color:rgb(255, 0, 242);
+  color:plum;
   padding: 10px 20px;
   text-align:left;
   text-decoration: none;
@@ -127,7 +127,7 @@ body {
 }
 
 .sort-bar-1 button:hover {
-  background-color: #a04551;
+  background-color: peachpuff;
 }
 .app-head{
   color: #131314;
@@ -147,7 +147,7 @@ body {
 .bot-army-5 h1 {
   text-align:left;
   margin-bottom: 15px;
-  color:blue;
+  color: purple;
 
 }
 
@@ -175,9 +175,9 @@ body {
 }
 
 .bot-army-5 .bot-card-4 button {
-  background-color: #ff4136;
+  background-color: #ff36ee;
   border: none;
-  color:aqua;
+  color:rgb(234, 176, 236);
   padding: 8px 16px;
   text-align:left;
   text-decoration: none;
@@ -191,7 +191,7 @@ body {
 }
 
 .bot-army-5 .bot-card-4 button:hover {
-  background-color: #d50000;
+  background-color:pink;
 }
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SortBar = ({ sortBots }) => {
+function SortBar  ({ sortBots }) {
   return (
     <div className="sort-bar-1">
       <button onClick={() => sortBots('health')}>Sort by Health</button>

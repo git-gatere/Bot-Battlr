@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BotArmy = ({ army, handleReleaseFromArmy,deleteBot }) => {
+function BotArmy  ({ army, handleReleaseFromArmy,deleteBot }) {
   return (
     <div className="bot-army-5">
       <h1>Your Bot Army</h1>

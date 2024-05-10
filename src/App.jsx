@@ -5,7 +5,7 @@ import Botcollection from './components/BotCollection';
 import BotDetails from './components/BotDetails';
 import { Routes, Route } from 'react-router-dom';
 import BotArmy from './components/BotArmy';
-import SortBar from './components/SortBar'; // Import the SortBar component
+import SortBar from './components/SortBar';
 
 
 function App() {
