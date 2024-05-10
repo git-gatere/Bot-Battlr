@@ -1,13 +1,10 @@
-# React + Vite
+ Below is the link to the deployed site.
+ 
+ https://git-gatere.github.io/Bot-Battlr/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ ## Note
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
+ You have to run npx json-server --watch db.json in order to run it properly.
 
 # Bot Army Management System
 ## By Famba Abigael
