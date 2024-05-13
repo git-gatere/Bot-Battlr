@@ -31,7 +31,6 @@ This is a web application for managing a collection of bots and organizing them 
 
 1. Clone the repository:
 ```bash
-git clone git@github.com:AbigaelFamba/Bot-Battlr.git
 ```
 2. Install the dependencies:
 ```bash
