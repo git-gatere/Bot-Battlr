@@ -7,7 +7,7 @@
  You have to run npx json-server --watch db.json in order to run it properly.
 
 # Bot Army Management System
-## By Famba Abigael
+
 
 This is a web application for managing a collection of bots and organizing them into an army. It allows users to view bot details, add bots to their army, release bots from the army, delete bots, and sort bots based on various attributes.
 
