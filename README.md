@@ -43,8 +43,13 @@ npm run dev
 4. Run the server
 ```bash
 json-server --watch db.json
+
 ```
 
+## video
+```bash
+<video controls src="bot.mp4" title="Video"></video>
+```
 ## License
 
 
