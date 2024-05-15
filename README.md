@@ -48,8 +48,7 @@ json-server --watch db.json
 
 ## video
 ```bash
-<video controls src="bot.mp4" title="Video"></video>
-```
+bot.mp4 
 ## License
 
 
